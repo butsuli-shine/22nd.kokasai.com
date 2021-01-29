@@ -69,6 +69,8 @@ const routes = [
   "/booth/3dデザイン研究会",
   "/booth/バドミントン部"
 ]
+const environment = process.env.NODE_ENV || 'local'
+const env = require(`./env/${environment}.js`)
 
 module.exports = {
   mode: 'universal',
@@ -118,7 +120,7 @@ module.exports = {
   },
 
   router: {
-    base: "/22nd/",
+    base: env.BASE_URL,
   },
 
   /*
