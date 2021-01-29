@@ -103,7 +103,7 @@ module.exports = {
       { name: "twitter:image", content: "/logo.png"}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: `${env.BASE_URL}favicon.ico` }
       //{ rel: 'stylesheet', href: '//cdn.materialdesignicons.com/2.5.94/css/materialdesignicons.min.css' }
     ],
     script: [
